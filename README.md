@@ -2,9 +2,9 @@
 
 ### $> npm install
 
-## Les extraits de code
+## Tuto
 
-**app.js**
+** app.js **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
