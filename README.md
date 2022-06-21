@@ -268,9 +268,9 @@ app.put('/api/pokemons/:id', (req, res) => {
 
 </div>
 
-**Une API Rest Complète : Supprimer un Pokémon**
+** Une API Rest Complète : Supprimer un Pokémon **
 
-**app.js**
+** app.js **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -289,9 +289,9 @@ app.delete('/api/pokemons/:id', (req, res) => {
 
 </div>
 
-**L’API Rest et la Base de données : Créer un modèle Sequelize**
+** L’API Rest et la Base de données : Créer un modèle Sequelize **
 
-**src/models/pokemon.js**
+** src/models/pokemon.js **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -332,9 +332,9 @@ app.delete('/api/pokemons/:id', (req, res) => {
 
 </div>
 
-**L’API Rest et la Base de données : Créer un modèle Sequelize**
+** L’API Rest et la Base de données : Créer un modèle Sequelize **
 
-**sequelize.js**
+** sequelize.js **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -375,7 +375,7 @@ module.exports = {
 
 </div>
 
-**_findAllPokemons.js_**
+** _findAllPokemons.js_ **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -480,9 +480,9 @@ module.exports = (app) => {
 
 </div>
 
-**Authentification : Créer un modèle User avec Sequelize**
+** Authentification : Créer un modèle User avec Sequelize **
 
-***models/user.js* **
+** models/user.js **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -505,7 +505,7 @@ module.exports = (app) => {
 
 </div>
 
-***routes/login.js* **
+** _ routes/login.js _ **
 
 <div class="wp-block-syntaxhighlighter-code ">
 
@@ -529,7 +529,7 @@ module.exports = (app) => {
 
 </div>
 
-***auth/auth.js* **
+**_ auth/auth.js _**
 
 <div class="wp-block-syntaxhighlighter-code ">
 
