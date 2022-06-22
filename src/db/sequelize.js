@@ -21,8 +21,8 @@ if (process.env.NODE_ENV === "production") {
     }
   );
 } else {
-  sequelize = new Sequelize("pokedex", "username", "password", {
-    host: "192.168.64.2",
+  sequelize = new Sequelize("pokedex", "root", "", {
+    host: "localhost",
     dialect: "mariadb",
     dialectOptions: {
       timezone: "Etc/GMT-2",

@@ -5,7 +5,7 @@ const auth = require("../auth/auth");
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.substring(1);
 
 module.exports = (app) => {
-  app.get("/api/pokemons", auth, (req, res) => {
+  app.get("/api/pokemons", (req, res) => {
     if (req.query.name) {
       const name = req.query.name;
       const limit = parseInt(req.query.limit) || 5;

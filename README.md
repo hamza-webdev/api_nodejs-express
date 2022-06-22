@@ -4,7 +4,13 @@
 
 ## Tuto
 
-** app.js **
+"scripts": {
+"start": "node app.js"
+// "start": "NODE_ENV=production node app.js",
+// "dev": "NODE_ENV=development nodemon app.js"
+},
+
+**app.js**
 
 <div class="wp-block-syntaxhighlighter-code ">
 
