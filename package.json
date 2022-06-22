@@ -19,7 +19,8 @@
     "url": "https://github.com/hamza-webdev/api_nodejs-express/issues"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon app.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",

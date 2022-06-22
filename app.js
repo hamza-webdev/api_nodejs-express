@@ -16,7 +16,9 @@ app
 sequelize.initDb();
 
 app.get("/", (req, res) => {
-  res.json("Hello, Heroku ! 👋");
+  res.json(
+    "Hello, aws ! 👋 tapper le lien: /api/pokemons pour lister tous les poks"
+  );
 });
 
 require("./src/routes/findAllPokemons")(app);
