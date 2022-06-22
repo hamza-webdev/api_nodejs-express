@@ -6,7 +6,7 @@ const pokemons = require("./mock-pokemon");
 
 let sequelize;
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "productions") {
   sequelize = new Sequelize(
     "kk8u5y871hfoaw9y",
     "t09tvm6qofrtvc7h",
@@ -21,8 +21,8 @@ if (process.env.NODE_ENV === "production") {
     }
   );
 } else {
-  sequelize = new Sequelize("pokedex", "root", "", {
-    host: "localhost",
+  sequelize = new Sequelize("pokedex", "root", "besmillah", {
+    host: "13.37.220.184",
     dialect: "mariadb",
     dialectOptions: {
       timezone: "Etc/GMT-2",
