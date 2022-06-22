@@ -6,22 +6,17 @@ const pokemons = require("./mock-pokemon");
 
 let sequelize;
 
-if (process.env.NODE_ENV === "productions") {
-  sequelize = new Sequelize(
-    "kk8u5y871hfoaw9y",
-    "t09tvm6qofrtvc7h",
-    "ryujse9ftf40wpqn",
-    {
-      host: "klbcedmmqp7w17ik.ec2-13-37-220-184.eu-west-3.compute.amazonaws.com",
-      dialect: "mariadb",
-      dialectOptions: {
-        timezone: "Etc/GMT-2",
-      },
-      logging: true,
-    }
-  );
-} else {
+if (process.env.NODE_ENV === "production") {
   sequelize = new Sequelize("pokedex", "root", "besmillah", {
+    host: "localhost",
+    dialect: "mariadb",
+    dialectOptions: {
+      timezone: "Etc/GMT-2",
+    },
+    logging: false,
+  });
+} else {
+  sequelize = new Sequelize("pokedex", "root", "", {
     host: "localhost",
     dialect: "mariadb",
     dialectOptions: {
