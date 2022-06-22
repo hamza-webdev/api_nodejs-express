@@ -27,7 +27,7 @@ require("./src/routes/createPokemon")(app);
 require("./src/routes/updatePokemon")(app);
 require("./src/routes/deletePokemon")(app);
 require("./src/routes/login")(app);
-// require("./src/routes/findPokemonByPk")(app);
+require("./src/routes/findOnePokemon")(app);
 
 // On gère les routes 404.
 app.use(({ res }) => {

@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "productions") {
     "t09tvm6qofrtvc7h",
     "ryujse9ftf40wpqn",
     {
-      host: "klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      host: "klbcedmmqp7w17ik.ec2-13-37-220-184.eu-west-3.compute.amazonaws.com",
       dialect: "mariadb",
       dialectOptions: {
         timezone: "Etc/GMT-2",
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "productions") {
   );
 } else {
   sequelize = new Sequelize("pokedex", "root", "besmillah", {
-    host: "13.37.220.184",
+    host: "localhost",
     dialect: "mariadb",
     dialectOptions: {
       timezone: "Etc/GMT-2",
