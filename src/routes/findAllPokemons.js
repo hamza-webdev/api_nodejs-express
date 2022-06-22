@@ -1,6 +1,6 @@
 const { Pokemon } = require("../db/sequelize");
 const { Op } = require("sequelize");
-const auth = require("../auth/auth");
+// const auth = require("../auth/auth");
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.substring(1);
 
