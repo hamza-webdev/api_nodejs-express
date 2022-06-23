@@ -8,7 +8,7 @@ let sequelize;
 
 if (process.env.NODE_ENV === "production") {
   sequelize = new Sequelize("pokedex", "root", "besmillah", {
-    host: "ec2-13-37-220-97.eu-west-3.compute.amazonaws.com",
+    host: "localhost",
     // host: "localhost",
     dialect: "mariadb",
     dialectOptions: {
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
   });
 } else {
   sequelize = new Sequelize("pokedex", "root", "besmillah", {
-    host: "ec2-13-37-220-97.eu-west-3.compute.amazonaws.com",
+    host: "localhost",
     dialect: "mariadb",
     dialectOptions: {
       timezone: "Etc/GMT-2",
