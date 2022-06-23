@@ -4,11 +4,24 @@
 
 ## Tuto
 
-"scripts": {
-"start": "node app.js"
-// "start": "NODE_ENV=production node app.js",
-// "dev": "NODE_ENV=development nodemon app.js"
-},
+## en deply ds la production utiliser cette commande pour fonctionner node ou npm en arriere plan
+
+- install pm2: $ sudo npm install pm2@latest -g
+- execute : $ pm2 start 'npm start'
+
+Les applications qui tournent sous PM2 seront redémarrées automatiquement si l’application crashe ou est arrêtée, mais nous pouvons prendre une mesure supplémentaire pour que l’application soit lancée au démarrage du système en utilisant la sous-commande startup. Cette sous-commande génère et configure un script de démarrage pour lancer PM2 et ses processus gérés aux démarrages du serveur :
+
+```
+$ pm2 startup systemd
+```
+
+```
+  "scripts": {
+  "start": "node app.js"
+  // "start": "NODE_ENV=production node app.js",
+  // "dev": "NODE_ENV=development nodemon app.js"
+  },
+```
 
 **app.js**
 
