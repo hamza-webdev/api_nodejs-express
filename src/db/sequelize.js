@@ -8,7 +8,7 @@ let sequelize;
 
 if (process.env.NODE_ENV === "production") {
   sequelize = new Sequelize("pokedex", "root", "besmillah", {
-    host: "localhost",
+    host: "ec2-13-37-220-97.eu-west-3.compute.amazonaws.com",
     dialect: "mariadb",
     dialectOptions: {
       timezone: "Etc/GMT-2",
